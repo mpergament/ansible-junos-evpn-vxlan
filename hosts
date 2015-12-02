@@ -12,8 +12,8 @@ spine-qfx
 [spine-mx]
 
 [spine-qfx]
-qfx10000-01  junos_host=<ip address>
-qfx10000-02  junos_host=<ip address>
+qfx10000-01  junos_host=10.92.71.9 mgmt_sub_mask=23 mgmt_sub_gw=10.92.71.254 ansible_ssh_user=root ansible_ssh_pass=Embe1mpls
+#qfx10000-02  junos_host=<ip address>
 
 #######################
 ## leaf devices      ##
@@ -23,10 +23,10 @@ leaf-qfx-l2
 leaf-qfx-l3
 
 [leaf-qfx-l2]
-qfx5100-01-48s  junos_host=<ip address>
-qfx5100-02-48s  junos_host=<ip address>
-qfx5100-03-48s  junos_host=<ip address>
-qfx5100-04-96s  junos_host=<ip address>
+qfx5100-01-48s  junos_host=10.92.71.86 mgmt_sub_mask=23 mgmt_sub_gw=10.92.71.254 ansible_ssh_user=root ansible_ssh_pass=Embe1mpls
+qfx5100-02-48s  junos_host=10.92.71.87 mgmt_sub_mask=23 mgmt_sub_gw=10.92.71.254 ansible_ssh_user=root ansible_ssh_pass=Embe1mpls
+qfx5100-03-48s  junos_host=10.92.71.88 mgmt_sub_mask=23 mgmt_sub_gw=10.92.71.254 ansible_ssh_user=root ansible_ssh_pass=Embe1mpls
+qfx5100-04-96s  junos_host=10.92.71.94 mgmt_sub_mask=23 mgmt_sub_gw=10.92.71.254 ansible_ssh_user=root ansible_ssh_pass=Embe1mpls
 
 [leaf-qfx-l3]
 # nothing
@@ -37,7 +37,7 @@ qfx5100-04-96s  junos_host=<ip address>
 
 [qfx10000]
 qfx10000-01
-qfx10000-02
+#qfx10000-02
 
 [qfx5000]
 qfx5100-01-48s
